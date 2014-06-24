@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <title>Assignment for Bootstrap</title>
+       <link rel="stylesheet" href="./css/bootstrap.min.css">
+ 
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+ <body>
+        
+ <div class="container">
+<div>
+        <ul class="list-inline">
+        <li>Home</li>
+        <li>Features</li>
+        <li>About Us</li>
+        
+    </ul> <div>
+<img scr="./images/logo.png"/>
+         <div class="hero-unit">
+         <h1>Awesome responsive layout</h1>
+         <p>Hello guys i am a ".hero-unit" and you can use me if you wanna say something important.</p>
+         <p><a class="btn btn-primary btn-large">Super important &raquo;</a></p>
+         </div><!-- .hero-unit -->
+ <div class="row">
+<div class="span12">FEATURES</div>
+</div>       
+ <div class="row">
+         <div class="span4">
+         <h2>Free prototype </h2>
+         <p>We will build a prototype for you. Free of cost. Continue to build further only if you like it. We do so because we are confident in our ability and 
+your app idea!. </p>
+         </div><!-- .span4 -->
+   
+         <div class="span4">
+                 <h2>Export </h2>
+         <p>If have an internal team or a group of developers you work with, you can. Export the prototype and we will ship the code and data, ready to further developed on.  </p>
+         </div><!-- .span4 -->
+   
+         <div class="span4">
+                 <h2>Portability</h2>
+         <p>Apart from being able to export in developer friendly, we also support iOS apps, Android apps and chrome apps out of the box. You can also request export in a framework of your choice.</p>
+         </div><!-- .span4 -->
+   
+ </div><!-- .row -->
+<div class="row"> <!-- .row2-->
+         <div class="span4">
+         <h2>No Vendor Tie  </h2>
+         <p>You own the application logic and data and can export it to develop further on it, or just host it on your own. Our process is built around that assumption and provides you complete flexibility.  </p>
+         </div><!-- .span4 -->
+   
+         <div class="span4">
+                 <h2>Portability</h2>
+         <p>Apart from being able to export in developer friendly, we also support iOS apps, Android apps and chrome apps out of the box. You can also request export in a framework of your choice.</p>
+         </div><!-- .span4 -->
+   
+         <div class="span4">
+         <h2>No Vendor Tie  </h2>
+         <p>You own the application logic and data and can export it to develop further on it, or just host it on your own. Our process is built around that assumption and provides you complete flexibility.  </p>
+         </div><!-- .span4 -->
+   
+ </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

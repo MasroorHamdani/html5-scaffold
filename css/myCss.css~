@@ -1,0 +1,29 @@
+.containermarketing{
+	background: green;
+	text-align: center;
+}
+.rowAllign{
+	text-align: center;
+}
+.jumbotron{
+	background: gray;
+	text-align: center;
+}
+.tablealignment{
+	padding: 5px;
+}
+.img-responsive {
+max-width:100%;
+height:auto;
+}
+
+.img-circle {
+position:absolute;
+z-index:99;
+left:10px;
+bottom:-50%;
+}
+
+.second-img{
+
+}

@@ -1,37 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-
-    <!-- Bootstrap -->
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+    <title>Assignment for Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a HU-Web Assignment. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-      </div>
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/myCss.css">
+</head>
+<body>
+	<div class="container">
+    	<div class="navbar-wrapper">
+        	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          		<div class="container">
+            		<div class="navbar-header">
+              			<button type="button" class="navbar-toggle" data-toggle="collapse" 
+              				data-target=".navbar-collapse">
+                			<span class="sr-only">Toggle navigation</span>
+                			<span class="icon-bar"></span>
+                			<span class="icon-bar"></span>
+                			<span class="icon-bar"></span>
+              			</button>
+              			<a class="navbar-brand" href="#">
+              				<img src="images/logo.png" alt="Logo Image"/>
+              				Meta Launch</a>
+            		</div>
+            		<div class="navbar-collapse collapse">
+              			<ul class="nav navbar-nav navbar-right">
+                			<li><a href="#">Home</a></li>
+                			<li><a href="#about">About Us</a></li>
+                			<li><a href="#contact">Features</a></li>
+              			</ul>
+            		</div>
+          		</div>
+        	</div>
+  		</div>
+<!-- End of navbar-->
+<!--  Carousel Begins -->
+      	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      	<!-- Indicators -->
+      		<ol class="carousel-indicators">
+        		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        		<li data-target="#myCarousel" data-slide-to="1"></li>
+        		<li data-target="#myCarousel" data-slide-to="2"></li>
+      		</ol>
+      		<div class="carousel-inner">
+        		<div class="item active">
+          			<img src="images/bg-1.jpg" alt="First slide">
+         		    <div class="carousel-caption">
+         		    	<div>
+         		    		<img src="images/iphone-5.png" height="450px" align="left"/>
+         		    	</div>	
+         		    	<h3>Meta Launch</h3>
+              			<p><h4>Launch a working app in a day</h4></p>
+              			<p>Share your App ideas. We will create a working application for you in
+              			24 hours.</p>
+              			<p><a class="btn btn-lg btn-primary" href="#" role="button">Contact Us</a></p>
+            		</div>
+          		</div>
+        		<div class="item">
+          			<img src="images/bg-2.jpg" alt="Second slide">
+          			<div class="carousel-caption">
+          				<div>
+         		    		<img src="images/lumia-900.png" height="450px" align="left"/>
+         		    	</div>	
+            			<h3>Meta Launch</h3>
+            			<p><h4>Launch a working app in a day</h4></p>
+            			<p>Share your App ideas. We will create a working application for you in
+            			24 hours.</p>
+            			<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            		</div>
+        		</div>
+        		<div class="item">
+          			<img src="images/bg-3.jpg" alt="Third slide">
+          			<div class="carousel-caption">
+          				<div>
+         		    		<img src="images/nexus-4.png" height="450px" align="left"/>
+         		    	</div>
+            	  		<h3>Meta Launch</h3>
+            	  		<p><h4>Launch a working app in a day</h4></p>
+            	  		<p>Share your App ideas. We will create a working application for you in
+            	 	 		24 hours.</p>
+            	  		<p><a class="btn btn-lg btn-primary" href="#" role="button">Call Us</a></p>
+          			</div>
+        		</div>
+      		</div>
+      		<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      		<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    	</div>
+<!--  End of Carousel -->         
+<!-- Row Begins -->
+	<div class="row">
+		<div class="rowAllign">
+			<h4>FEATURES</h4>
+			<h3>Every Feature Implemented with care</h3>
+		</div>
+    	<div class="col-sm-4">
+    		<img src="images/pencil_small.png" class="thumbnail" alt="icon image"> 
+      		<h2>Free prototype </h2>
+    		<p>We will build a prototype for you. Free of cost. Continue to build further only if you like it. We do so because we are confident in our ability and 
+				your app idea!. </p>
+    	</div>
+		<div class="col-sm-4">
+			<img src="images/gmail_small.png" class="thumbnail" alt="icon image"> 
+    		<h2>Export </h2>
+   	 		<p>If have an internal team or a group of developers you work with, you can. Export the prototype and we will ship the code and data, ready to further developed on.  </p>
+    	</div>
+    	<div class="col-sm-4">
+    		<img src="images/pencil_small.png" class="thumbnail" alt="icon image"> 
+    		<h2>Portability</h2>
+    		<p>Apart from being able to export in developer friendly, we also support iOS apps, Android apps and chrome apps out of the box. You can also request export in a framework of your choice.</p>
+    	</div>
     </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/vendor/jquery-1.11.0.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <div class="row">
+    	<div class="col-sm-4">
+        	<img src="images/gmail_small.png" class="thumbnail" alt="icon image"> 
+         	<h2>No Vendor Tie  </h2>
+        	<p>You own the application logic and data and can export it to develop further on it, or just host it on your own. Our process is built around that assumption and provides you complete flexibility.  </p>
+        </div>
+        <div class="col-sm-4">
+  	    	<img src="images/pencil_small.png" class="thumbnail" alt="icon image"> 
+         	<h2>Portability</h2>
+         	<p>Apart from being able to export in developer friendly, we also support iOS apps, Android apps and chrome apps out of the box. You can also request export in a framework of your choice.</p>
+        </div>
+        <div class="col-sm-4">
+        	<img src="images/gmail_small.png" class="thumbnail" alt="icon image"> 
+         	<h2>No Vendor Tie  </h2>
+         	<p>You own the application logic and data and can export it to develop further on it, or just host it on your own. Our process is built around that assumption and provides you complete flexibility.  </p>
+        </div>
+	</div>
+ 	<hr/>
+	<div class="container marketing">
+  		<div class="row containermarketing">
+ 			<h4>Screenshoots</h4>
+ 			<h3>Check Out Our App </h3>
+ 			<div ><img src="images/screenshot1.png" class="col-sm-3" alt="Screenshot1"/></div>
+ 			<div ><img src="images/screenshot2.png" class="col-sm-3" alt="Screenshot2"/></div>
+ 			<div ><img src="images/screenshot3.png" class="col-sm-3" alt="Screenshot3"/></div>
+ 			<div ><img src="images/screenshot1.png" class="col-sm-3" alt="Screenshot4"/></div>
+ 		</div>
+	<hr class="featurette-divider">
+    <div class="row featurette">
+    	<div class="col-md-7">
+        	<h2 class="featurette-heading"><span class="text-muted">Crafted Beautifully</span></h2>
+          	<p class="lead">Attention To every Last Detail </br>
+          	<a class= "btn btn-large btn-success" href="#">Contact Us</a></p>
+        </div>
+        <div class="col-md-5">
+        	<img class="featurette-image img-responsive" src="images/iphone_white_angle1.png" alt="Image">
+        </div>
+    </div>
+ 	<div class="allignbottom">
+ 		<div class="jumbotron">
+ 			<h3>Contact us </h3>
+ 			<p class="lead">Tell Us What Is On Your Mind</p>
+ 			<a class= "btn btn-large btn-success" href="#" data-toggle="modal" 
+ 				data-target="#myModal">Contact Us</a>
+ 			<div id="myModal" class="modal fade">
+    			<div class="modal-dialog">
+        			<div class="modal-content">
+            			<div class="modal-header">
+                			<button type="button" class="close" data-dismiss="modal"
+                 				aria-hidden="true">&times;</button>
+                			<h4 class="modal-title">Contact Us Form</h4>
+            			</div>
+            			<form>
+            				<div class="modal-body">
+          			        	<table>
+            						<tr>
+            							<td class="tablealignment"><label> Name:</label></td>
+            							<td class="tablealignment"><input type="text" /></td>
+            						</tr>
+            						<tr>
+            							<td class="tablealignment"><label> Message:</label></td>
+            							<td class="tablealignment"><textarea rows="5" cols="19"></textarea>  </td>
+            						</tr>
+            					</table>
+            				</div>
+      						<div class="modal-footer">
+                				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                				<button type="button" class="btn btn-primary">Sent</button>
+            				</div>
+             			</form>
+        			</div>
+    			</div>
+			</div>
+		</div>
+	</div>
+ 
+ <!-- footer -->
+ 	<hr>
+    <div class="row">
+    	<div class="col-xs-12">
+        	<footer>
+            	<p>&copy; Copyright 2013 HashedIn</p>
+            </footer>
+        </div>
+    </div>
+    <!-- footer end -->
+ </div><!-- .container -->
+     
+ </body>
+ 
 </html>
