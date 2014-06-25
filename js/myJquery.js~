@@ -1,0 +1,26 @@
+function validateName(){
+alert("Function");
+	var name=$("#inputName").val();
+	alert("Name "+name);
+	$("#inputName").validate({
+		rules:{ 
+			inputName: 
+				{required: true, minlength: 5, 					 }
+		messages:{inputname:{
+			required:"Please enter your name",
+			minlenght:"Name should be min 1 character",
+			}}
+	});
+}
+$(document).ready(function () {
+
+	$("#inputName").blur(function(){
+		$("#inputName").validate({
+		rules:{inputName:{required:true}},
+		messages:{inputName:{required:"Field required"}}
+		});
+	});
+
+
+
+});

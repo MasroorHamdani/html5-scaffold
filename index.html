@@ -5,8 +5,6 @@
     <title>Assignment for Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/myCss.css">
 </head>
 <body>
@@ -23,7 +21,7 @@
                 			<span class="icon-bar"></span>
               			</button>
               			<a class="navbar-brand" href="#">
-              				<img src="images/logo.png" alt="Logo Image"/>
+              				<img src="images/logo.png" alt="Logo Image" height="30px"/>
               				Meta Launch</a>
             		</div>
             		<div class="navbar-collapse collapse">
@@ -47,16 +45,19 @@
       		</ol>
       		<div class="carousel-inner">
         		<div class="item active">
-          			<img src="images/bg-1.jpg" alt="First slide">
+          			<img src="images/bg-1.jpg" alt="First slide" class="img-responsive">
          		    <div class="carousel-caption">
          		    	<div>
          		    		<img src="images/iphone-5.png" height="450px" align="left"/>
          		    	</div>	
-         		    	<h3>Meta Launch</h3>
-              			<p><h4>Launch a working app in a day</h4></p>
-              			<p>Share your App ideas. We will create a working application for you in
-              			24 hours.</p>
-              			<p><a class="btn btn-lg btn-primary" href="#" role="button">Contact Us</a></p>
+         		    	<div class="text-center">
+	         		    	<h3>Meta Launch</h3>
+	              			<p><h4>Launch a working app in a day</h4></p>
+	              			<p>Share your App ideas. We will create a working application for you in
+	              			24 hours.</p>
+	              			<p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal" 
+	 						data-target="#myModal">Contact Us</a></p>
+              			</div>
             		</div>
           		</div>
         		<div class="item">
@@ -65,11 +66,13 @@
           				<div>
          		    		<img src="images/lumia-900.png" height="450px" align="left"/>
          		    	</div>	
-            			<h3>Meta Launch</h3>
-            			<p><h4>Launch a working app in a day</h4></p>
-            			<p>Share your App ideas. We will create a working application for you in
-            			24 hours.</p>
-            			<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+         		    	<div class="text-center">
+	            			<h3>Meta Launch</h3>
+	            			<p><h4>Launch a working app in a day</h4></p>
+	            			<p>Share your App ideas. We will create a working application for you in
+	            			24 hours.</p>
+	            			<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            			</div>
             		</div>
         		</div>
         		<div class="item">
@@ -78,11 +81,13 @@
           				<div>
          		    		<img src="images/nexus-4.png" height="450px" align="left"/>
          		    	</div>
-            	  		<h3>Meta Launch</h3>
-            	  		<p><h4>Launch a working app in a day</h4></p>
-            	  		<p>Share your App ideas. We will create a working application for you in
-            	 	 		24 hours.</p>
-            	  		<p><a class="btn btn-lg btn-primary" href="#" role="button">Call Us</a></p>
+         		    	<div class="text-center">
+	            	  		<h3>Meta Launch</h3>
+	            	  		<p><h4>Launch a working app in a day</h4></p>
+	            	  		<p>Share your App ideas. We will create a working application for you in
+	            	 	 		24 hours.</p>
+	            	  		<p><a class="btn btn-lg btn-primary" href="#" role="button">Call Us</a></p>
+            	  		</div>
           			</div>
         		</div>
       		</div>
@@ -91,61 +96,69 @@
     	</div>
 <!--  End of Carousel -->         
 <!-- Row Begins -->
+	<div class="secondRow">
 	<div class="row">
-		<div class="rowAllign">
+		<div class="text-center">
 			<h4>FEATURES</h4>
 			<h3>Every Feature Implemented with care</h3>
 		</div>
-    	<div class="col-sm-4">
+    	<div class="col-md-4 text-center img-responsive img-center">
     		<img src="images/pencil_small.png" class="thumbnail" alt="icon image"> 
       		<h2>Free prototype </h2>
     		<p>We will build a prototype for you. Free of cost. Continue to build further only if you like it. We do so because we are confident in our ability and 
 				your app idea!. </p>
     	</div>
-		<div class="col-sm-4">
+		<div class="col-md-4" text-center img-responsive img-center>
 			<img src="images/gmail_small.png" class="thumbnail" alt="icon image"> 
     		<h2>Export </h2>
    	 		<p>If have an internal team or a group of developers you work with, you can. Export the prototype and we will ship the code and data, ready to further developed on.  </p>
     	</div>
-    	<div class="col-sm-4">
+    	<div class="col-md-4" text-center img-responsive img-center>
     		<img src="images/pencil_small.png" class="thumbnail" alt="icon image"> 
     		<h2>Portability</h2>
     		<p>Apart from being able to export in developer friendly, we also support iOS apps, Android apps and chrome apps out of the box. You can also request export in a framework of your choice.</p>
     	</div>
     </div>
     <div class="row">
-    	<div class="col-sm-4">
+    	<div class="col-md-4 text-center img-responsive img-center">
         	<img src="images/gmail_small.png" class="thumbnail" alt="icon image"> 
          	<h2>No Vendor Tie  </h2>
         	<p>You own the application logic and data and can export it to develop further on it, or just host it on your own. Our process is built around that assumption and provides you complete flexibility.  </p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 text-center img-responsive img-center">
   	    	<img src="images/pencil_small.png" class="thumbnail" alt="icon image"> 
          	<h2>Portability</h2>
          	<p>Apart from being able to export in developer friendly, we also support iOS apps, Android apps and chrome apps out of the box. You can also request export in a framework of your choice.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 text-center img-responsive img-center">
         	<img src="images/gmail_small.png" class="thumbnail" alt="icon image"> 
          	<h2>No Vendor Tie  </h2>
          	<p>You own the application logic and data and can export it to develop further on it, or just host it on your own. Our process is built around that assumption and provides you complete flexibility.  </p>
         </div>
 	</div>
+ 	</div>
  	<hr/>
-	<div class="container marketing">
-  		<div class="row containermarketing">
- 			<h4>Screenshoots</h4>
- 			<h3>Check Out Our App </h3>
- 			<div ><img src="images/screenshot1.png" class="col-sm-3" alt="Screenshot1"/></div>
- 			<div ><img src="images/screenshot2.png" class="col-sm-3" alt="Screenshot2"/></div>
- 			<div ><img src="images/screenshot3.png" class="col-sm-3" alt="Screenshot3"/></div>
- 			<div ><img src="images/screenshot1.png" class="col-sm-3" alt="Screenshot4"/></div>
- 		</div>
+	
+  		<div class="pad">
+	<p class="textalignment textcolor text-center">SCREENSHORTS</p>
+	<p class="textalignment textcolor text-center">Check out our App in Action</p>
+	<div class="row">
+	<div class="col-md-3 "><img class="screenshots"src="images/screenshot1.png"></img></div>
+	<div class="col-md-3"><img class="screenshots" src="images/screenshot2.png"></img></div>
+	<div class="col-md-3"><img class="screenshots" src="images/screenshot3.png"></img></div>
+	<div class="col-md-3"><img class="screenshots" src="images/screenshot1.png"></img></div>
+	
+	</div>
+	
+	
+	</div>
 	<hr class="featurette-divider">
     <div class="row featurette">
     	<div class="col-md-7">
         	<h2 class="featurette-heading"><span class="text-muted">Crafted Beautifully</span></h2>
           	<p class="lead">Attention To every Last Detail </br>
-          	<a class= "btn btn-large btn-success" href="#">Contact Us</a></p>
+          	<a class= "btn btn-large btn-success" href="#" data-toggle="modal" 
+ 				data-target="#myModal">Contact Us</a></p>
         </div>
         <div class="col-md-5">
         	<img class="featurette-image img-responsive" src="images/iphone_white_angle1.png" alt="Image">
@@ -167,22 +180,43 @@
             			</div>
             			<form>
             				<div class="modal-body">
-          			        	<table>
-            						<tr>
-            							<td class="tablealignment"><label> Name:</label></td>
-            							<td class="tablealignment"><input type="text" /></td>
-            						</tr>
-            						<tr>
-            							<td class="tablealignment"><label> Message:</label></td>
-            							<td class="tablealignment"><textarea rows="5" cols="19"></textarea>  </td>
-            						</tr>
-            					</table>
-            				</div>
-      						<div class="modal-footer">
+            					<div class="form-group">
+						           <label for="inputName text-left">Name</label><span id="infotext">*</span>
+						           <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+						        	<div class="spanErrorMsgs" id="spanName"></div>
+						        </div>
+						        <div class="form-group">
+						           <label for="inputEmail">Email</label><span id="infotext">*</span>
+						           <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+						        	<div class="spanErrorMsgs" id="spanEmail"></div>
+						        </div>
+						        <div class="form-group">
+						            <label for="inputContactNo">Contact No</label><span id="infotext">*</span>
+						            <input type="text" class="form-control" id="inputContactNo" placeholder="Enter Contact">
+						        	<div class="spanErrorMsgs" id="spanContact"></div>
+						        </div>
+						        <div class="form-group">
+						           <label for="inputFromDate">From Date</label><span id="infotext">*</span>
+						           <input type="text" class="form-control" id="inputFromDate" placeholder="DD-MM-YYYY">
+						        	<div class="spanErrorMsgs" id="spanFromDate"></div>
+						        </div>
+						        <div class="form-group">
+						           <label for="inputToDate">To Date</label><span id="infotext">*</span>
+						           <input type="text" class="form-control" id="inputToDate" placeholder="DD-MM-YYYY">
+						        	<div class="spanErrorMsgs" id="spanToDate"></div>
+						        </div>
+						        <div class="form-group">
+						           <label for="inputAddress">Address</label><span id="infotext">*</span>
+						           <textarea class="form-control" id="inputAddress" placeholder="Enter your Address">
+						           </textarea>
+						        	<div class="spanErrorMsgs" id="spanAddress"></div>
+						        </div>
+					        </div>
+					        <div class="modal-footer">
                 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                				<button type="button" class="btn btn-primary">Sent</button>
+                				<button type="button" class="btn btn-primary" id="btnSent">Sent</button>
             				</div>
-             			</form>
+					   </form>
         			</div>
     			</div>
 			</div>
@@ -200,7 +234,9 @@
     </div>
     <!-- footer end -->
  </div><!-- .container -->
-     
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/myJquery.js"></script>
  </body>
  
 </html>
